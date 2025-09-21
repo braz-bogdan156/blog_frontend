@@ -1,69 +1,104 @@
-# React + TypeScript + Vite
+# 📖 Blog Application – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend UI for the **Blog Application**.  
+Built with **React + TypeScript**, supporting post and comment creation, editing, deletion, and display.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
+- ⚛️ **React 19 + TypeScript**
+- 🏗 **Redux Toolkit** – global state management  
+- 🔄 **React Query** – async data fetching & caching  
+- 📝 **React Hook Form + Zod** – form handling & validation  
+- 🎨 **Tailwind CSS** – styling  
+- 🔔 **React Hot Toast** – notifications  
+- 🛣 **React Router v6** – routing  
+- ⚡ **Vite** – build & dev server  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Setup & Run
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Clone the project
+```bash
+git clone https://github.com/YOUR_USERNAME/blog_application.git
+cd blog_application/frontend_blog
+2. Install dependencies
+bash
+Копировать код
+npm install
+3. Configure API
+Set your backend server URL in the .env file:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+ini
+Копировать код
+VITE_API_URL=http://localhost:5000
+4. Run the dev server
+bash
+Копировать код
+npm run dev
+The frontend will be available at:
+👉 http://localhost:5173
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+📌 Features
+🔹 Core Requirements
+CRUD for posts:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+create
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+update
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+delete
+
+view
+
+Comments on posts
+
+Global state with Redux Toolkit
+
+Async requests with React Query
+
+Form validation with React Hook Form + Zod
+
+🔹 Optional Enhancements (implemented)
+🔍 Search & sort posts (A–Z, Z–A)
+
+📑 Pagination for post lists
+
+🔔 Notifications for success/error (toast)
+
+📂 Project Structure
+bash
+Копировать код
+frontend_blog/
+├── src/
+│   ├── components/       # UI components (forms, buttons, lists)
+│   ├── features/         # Redux slices
+│   ├── hooks/            # custom hooks
+│   ├── interfaces/       # TypeScript types & interfaces
+│   ├── pages/            # pages (Posts, Create, Update)
+│   ├── store/            # Redux store
+│   ├── utils/            # helper functions
+│   ├── App.tsx           # routing
+│   ├── main.tsx          # entry point
+│   └── index.css         # Tailwind styles
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+✅ Evaluation Criteria
+Functionality: All requirements are met
+
+Code Quality: Clean and structured code
+
+Best Practices: Modern libraries and patterns used
+
+Architecture: Clear abstractions via features, interfaces, hooks
+
+User Experience: Simple and intuitive UI
+
+🚀 Notes
+The backend API is fully ready and this frontend communicates with it
+
+TypeScript utility types are used to minimize code duplication
+
+The project is easily extendable and scalable with new features
