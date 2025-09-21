@@ -1,0 +1,64 @@
+.item {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.content {
+  font-size: 0.875rem;
+  color: #4b5563; 
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editButton {
+  padding: 0.25rem 0.5rem;
+  background-color: #f59e0b; 
+  color: white;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.editButton:hover {
+  background-color: #d97706; 
+}
+
+.deleteButton {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.deleting {
+  background-color: #fca5a5; 
+  cursor: not-allowed;
+}
+
+.deleteButton:not(.deleting) {
+  background-color: #ef4444; 
+}
+
+.deleteButton:not(.deleting):hover {
+  background-color: #dc2626; 
+}
