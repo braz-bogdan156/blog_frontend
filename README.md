@@ -24,21 +24,15 @@ Built with **React + TypeScript**, supporting post and comment creation, editing
 git clone https://github.com/YOUR_USERNAME/blog_application.git
 cd blog_application/frontend_blog
 2. Install dependencies
-bash
-Копировать код
 npm install
 3. Configure API
 Set your backend server URL in the .env file:
 
-ini
-Копировать код
 VITE_API_URL=http://localhost:5000
 4. Run the dev server
-bash
-Копировать код
 npm run dev
 The frontend will be available at:
-👉 http://localhost:5173
+👉 http://localhost:5174
 
 📌 Features
 🔹 Core Requirements
@@ -68,8 +62,6 @@ Form validation with React Hook Form + Zod
 🔔 Notifications for success/error (toast)
 
 📂 Project Structure
-bash
-Копировать код
 frontend_blog/
 ├── src/
 │   ├── components/       # UI components (forms, buttons, lists)
