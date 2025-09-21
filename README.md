@@ -10,7 +10,7 @@ Built with **React + TypeScript**, supporting post and comment creation, editing
 - 🏗 **Redux Toolkit** – global state management  
 - 🔄 **React Query** – async data fetching & caching  
 - 📝 **React Hook Form + Zod** – form handling & validation  
-- 🎨 **Tailwind CSS** – styling  
+- 🎨 **Tailwind CSS + CSS modules** – styling  
 - 🔔 **React Hot Toast** – notifications  
 - 🛣 **React Router v6** – routing  
 - ⚡ **Vite** – build & dev server  
