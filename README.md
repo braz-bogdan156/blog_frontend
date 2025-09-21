@@ -21,14 +21,13 @@ Built with **React + TypeScript**, supporting post and comment creation, editing
 
 ### 1. Clone the project
 ```bash
-git clone https://github.com/YOUR_USERNAME/blog_application.git
-cd blog_application/frontend_blog
+git clone https://github.com/braz-bogdan156/blog_frontend
+cd frontend_blog
 2. Install dependencies
 npm install
 3. Configure API
-Set your backend server URL in the .env file:
-
-VITE_API_URL=http://localhost:5000
+Set backend server URL in the frontend_blog/src/api/api.ts:
+VITE_BACKEND_API_URL=http://localhost:7000
 4. Run the dev server
 npm run dev
 The frontend will be available at:
