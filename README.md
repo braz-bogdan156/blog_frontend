@@ -106,4 +106,4 @@ The project supports multiple .env files for flexibility:
 
 🚀 Deployment
 The backend was deployed to Render.
-🚀 Production Frontend on Vercel: *
+🚀 Production Frontend on Vercel: https://blogfrontend-nine-pearl.vercel.app
