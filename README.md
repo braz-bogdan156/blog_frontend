@@ -93,3 +93,17 @@ The backend API is fully ready and this frontend communicates with it
 TypeScript utility types are used to minimize code duplication
 
 The project is easily extendable and scalable with new features
+
+🌐 Environment Config
+
+The project supports multiple .env files for flexibility:
+
+.development.env – local development & testing
+
+.production.env – production deployment (Vercel)
+
+.env – base example (can be used as a template)
+
+🚀 Deployment
+The backend was deployed to Render.
+🚀 Production Frontend on Vercel: *
